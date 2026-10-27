@@ -10,7 +10,7 @@ Web de una sola página (HTML y CSS, sin frameworks) publicada en GitHub Pages. 
 | Cada enlace interno lleva a una sección que existe | Que el menú no tenga enlaces rotos al renombrar secciones. |
 | Los enlaces externos usan https y abren de forma segura | Enlaces sin `http` inseguro y con `rel="noopener"`. |
 | Todos los botones de email llevan a la misma dirección válida | Que no quede una dirección antigua en algún botón. |
-| El botón de email abre un correo a la dirección correcta | Que el contacto llegue a donde tiene que llegar. |
+| Los botones "Contactar" abren un correo a la dirección correcta | Que los dos botones de contacto hagan lo mismo y lleguen a donde tienen que llegar. |
 | Cada proyecto tiene un estado reconocible | Que solo haya un proyecto "en curso" a la vez (la regla del portfolio). |
 | Cada proyecto terminado enlaza a su repositorio | Que nada aparezca como terminado sin poder verse. |
 | "Volver arriba" lleva al principio de la página | Un fallo real: con la cabecera fija, el enlace apuntaba a la propia cabecera y no hacía nada. |

@@ -66,11 +66,12 @@ test('cada proyecto terminado enlaza a su repositorio en GitHub', async ({ page 
   }
 });
 
-test('el botón de email abre un correo a la dirección de Gmail', async ({ page }) => {
-  await expect(page.getByRole('link', { name: 'Enviar un email' })).toHaveAttribute(
-    'href',
-    'mailto:basilio.montescastano@gmail.com',
-  );
+test('los botones "Contactar" abren un correo a la dirección de Gmail', async ({ page }) => {
+  const buttons = page.getByRole('link', { name: 'Contactar' });
+  await expect(buttons).toHaveCount(2);
+  for (const button of await buttons.all()) {
+    await expect(button).toHaveAttribute('href', 'mailto:basilio.montescastano@gmail.com');
+  }
 });
 
 test('el menú marca la sección que se está viendo', async ({ page, isMobile }) => {
