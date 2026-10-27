@@ -17,6 +17,7 @@ Web de una sola página (HTML y CSS, sin frameworks) publicada en GitHub Pages. 
 | El menú marca la sección que se está viendo | Que la navegación indique dónde estás (y solo una sección a la vez). |
 | La duración del puesto actual se calcula sola | Que la web no se quede desactualizada (se prueba con el reloj fijado en una fecha futura). |
 | En móvil, el menú se abre, lleva a la sección y se cierra | Que la navegación funcione en pantallas pequeñas. |
+| Las fechas de cada puesto caben en una sola línea | Que "Sept. 2021 – Oct. 2023" no se parta en dos líneas. |
 | No hay scroll horizontal | Que nada se salga de la pantalla en móvil. |
 | Pasa la revisión de accesibilidad WCAG 2.1 AA | Contraste, nombres accesibles, estructura (con axe-core). |
 | Respeta a quien prefiere menos movimiento | Que la animación del mapa se desactive con `prefers-reduced-motion`. |

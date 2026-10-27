@@ -115,6 +115,16 @@ test('en móvil, el menú se abre, lleva a la sección y se cierra', async ({ pa
   await expect(page.locator('#formacion')).toBeInViewport();
 });
 
+test('las fechas de cada puesto caben en una sola línea', async ({ page }) => {
+  for (const dates of await page.locator('.entry .dates').all()) {
+    const lines = await dates.evaluate((el) => {
+      const lh = parseFloat(getComputedStyle(el).lineHeight);
+      return Math.round(el.getBoundingClientRect().height / lh);
+    });
+    expect(lines, `"${await dates.textContent()}" ocupa más de una línea`).toBe(1);
+  }
+});
+
 test('no hay scroll horizontal', async ({ page }) => {
   const overflow = await page.evaluate(
     () => document.documentElement.scrollWidth - document.documentElement.clientWidth,

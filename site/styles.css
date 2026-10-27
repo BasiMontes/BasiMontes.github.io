@@ -142,7 +142,7 @@ main > section { max-width: var(--wide); margin: 0 auto; padding: clamp(3.5rem, 
 .section-head a { display: inline-block; margin-top: 0.6rem; font-weight: 700; }
 
 /* Entradas: experiencia y formación, en línea temporal */
-.entries { --when: 10rem; --rail: 3rem; list-style: none; margin: 0; padding: 0; position: relative; }
+.entries { --when: 13rem; --rail: 3rem; list-style: none; margin: 0; padding: 0; position: relative; }
 .entries::before {
   content: ""; position: absolute; top: 0.6rem; bottom: 0.6rem;
   left: calc(var(--when) + var(--rail) / 2); width: 1.5px; background: var(--contour);
@@ -159,8 +159,8 @@ main > section { max-width: var(--wide); margin: 0 auto; padding: clamp(3.5rem, 
 }
 .entry:has(.badge:not(.badge-soft))::after { background: var(--cobalt); }
 .when { grid-column: 1; text-align: right; }
-.dates { font-weight: 700; font-variant-numeric: tabular-nums; }
-.dur { color: var(--ink-soft); margin-top: 0.15rem; }
+.dates { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dur { color: var(--ink-soft); margin-top: 0.15rem; font-size: 0.92rem; }
 .entry-main { grid-column: 3; padding-right: clamp(1rem, 3vw, 2.5rem); }
 .entry-side { grid-column: 4; }
 .entry.no-side .entry-main { grid-column: 3 / 5; }
@@ -186,7 +186,7 @@ main > section { max-width: var(--wide); margin: 0 auto; padding: clamp(3.5rem, 
   .entry { grid-template-columns: var(--rail) minmax(0, 1fr); }
   .entry::after { left: calc(var(--rail) / 2 - 6px); }
   .when, .entry-main, .entry-side, .entry.no-side .entry-main { grid-column: 2; text-align: left; padding-right: 0; }
-  .when { display: flex; gap: 0.6rem; margin-bottom: 0.8rem; }
+  .when { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.6rem; margin-bottom: 0.8rem; }
   .dur { margin-top: 0; }
   .entry-side { margin-top: 1.2rem; }
 }
