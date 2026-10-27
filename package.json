@@ -1,0 +1,15 @@
+{
+  "name": "personal-site",
+  "private": true,
+  "description": "Web personal de Basilio Montes, con su propia suite de pruebas.",
+  "scripts": {
+    "serve": "http-server site -p 4173 -s",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.0",
+    "http-server": "^14.1.1"
+  }
+}
