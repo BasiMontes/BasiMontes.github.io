@@ -206,7 +206,9 @@ main > section { max-width: var(--wide); margin: 0 auto; padding: clamp(3.5rem, 
 .next { max-width: var(--measure); margin-top: 1.25rem; color: var(--ink-soft); }
 
 /* Aptitudes */
-.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 1rem; }
+.skill-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 860px) { .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .skill-grid { grid-template-columns: 1fr; } }
 .skill-grid > .card { padding: 1.4rem; }
 .skill-grid h3 { font-size: 1.15rem; font-weight: 900; }
 .skill-grid .sub { color: var(--ink-soft); margin-top: 0.15rem; }
