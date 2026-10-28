@@ -165,17 +165,19 @@
 <h3>Contrato de API: que el servidor cumpla lo que promete</h3>
 <span class="status">En curso</span>
 </div>
-<p>Pruebas de contrato sobre una API con su especificación OpenAPI: comprobar que las respuestas, los códigos de estado y los errores coinciden con lo documentado, y detectar cuándo dejan de hacerlo.</p>
-<ul class="tags"><li>Playwright</li><li>TypeScript</li><li>OpenAPI</li></ul>
+<p>API de práctica de reservas de pistas deportivas, con su especificación OpenAPI como fuente de verdad. Las pruebas validan cada respuesta contra el contrato y comprueban las reglas de negocio: horario, solapes, límites por usuario y cancelación. Cada regla se ha probado rompiéndola a propósito para comprobar que la prueba falla.</p>
+<p class="link"><a href="https://github.com/BasiMontes/api-contract-tests" rel="noopener" target="_blank">Ver el repositorio</a></p>
+<p><a href="https://github.com/BasiMontes/api-contract-tests/actions/workflows/ci.yml" rel="noopener" target="_blank"><img src="https://github.com/BasiMontes/api-contract-tests/actions/workflows/ci.yml/badge.svg" alt="Estado del CI del repositorio api-contract-tests"></a></p>
+<ul class="tags"><li>Playwright</li><li>TypeScript</li><li>OpenAPI</li><li>Node.js</li><li>CI/CD</li></ul>
 </li>
 <li class="project card" data-status="terminado">
 <div class="project-head">
 <h3>BuggyBank: verificar el resultado real</h3>
 <span class="status">Terminado</span>
 </div>
-<p>Pruebas de transferencias en un banco de práctica con fallos sembrados. Cada prueba comprueba el débito, el crédito y el movimiento registrado, no solo el mensaje de éxito. Hallazgo propio: las transferencias de importe entero de 500 o más se aplican dos veces; lo acoté con valores límite (499 no, 500 sí).</p><p class="link"><a href="https://github.com/BasiMontes/buggybank-playwright" rel="noopener" target="_blank">Ver el repositorio</a></p>
+<p>Pruebas de transferencias en un banco de práctica con fallos sembrados. Cada prueba comprueba el débito, el crédito y el movimiento registrado, no solo el mensaje de éxito. Hallazgo propio: las transferencias de importe entero de 500 o más se aplican dos veces; lo acoté con valores límite (499 no, 500 sí).</p>
+<p class="link"><a href="https://github.com/BasiMontes/buggybank-playwright" rel="noopener" target="_blank">Ver el repositorio</a></p>
 <ul class="tags"><li>Playwright</li><li>TypeScript</li></ul>
-</li><li>TypeScript</li></ul>
 </li>
 </ol>
 <p class="next">Siguientes retos: laboratorio de flaky tests, rendimiento, accesibilidad y seguridad, y evaluación de lo que genera una IA.</p>
