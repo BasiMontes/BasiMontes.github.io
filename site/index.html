@@ -77,7 +77,7 @@
 <section aria-label="Resumen" class="summary">
 <dl class="card">
 <div><dt>Ahora</dt><dd><strong>QA Engineer, knowmad mood</strong><span>Core Motor de una aseguradora</span></dd></div>
-<div><dt>Construyendo</dt><dd><strong>Fresco y una suite para BuggyBank</strong><span>Producto propio y retos de calidad</span></dd></div>
+<div><dt>Construyendo</dt><dd><strong>Fresco y retos de calidad</strong><span>Producto propio y pruebas de contrato de API</span></dd></div>
 <div><dt>Experiencia</dt><dd><strong>Más de 6 años en QA</strong><span>Seguros, datos inmobiliarios y producto</span></dd></div>
 <div><dt>Formación</dt><dd><strong>Geografía e Historia y Máster en SIG</strong><span>Máster en Data Science; ahora, Dojo Agentic Quality Engineer (UPEX)</span></dd></div>
 <div><dt>Idiomas</dt><dd><strong>Español, inglés, italiano</strong><span>Nativo, profesional, básico</span></dd></div>
@@ -162,14 +162,23 @@
 <ol class="project-list">
 <li class="project card" data-status="en-curso">
 <div class="project-head">
-<h3>BuggyBank: verificar el resultado real</h3>
+<h3>Contrato de API: que el servidor cumpla lo que promete</h3>
 <span class="status">En curso</span>
 </div>
-<p>Pruebas de transferencias en un banco de práctica con fallos sembrados. Cada prueba comprueba el débito, el crédito y el movimiento registrado, no solo el mensaje de éxito. Hallazgo propio: transferir el saldo exacto mueve el doble de dinero.</p><p class="link"><a href="https://github.com/BasiMontes/buggybank-playwright" rel="noopener" target="_blank">Ver el repositorio</a></p>
+<p>Pruebas de contrato sobre una API con su especificación OpenAPI: comprobar que las respuestas, los códigos de estado y los errores coinciden con lo documentado, y detectar cuándo dejan de hacerlo.</p>
+<ul class="tags"><li>Playwright</li><li>TypeScript</li><li>OpenAPI</li></ul>
+</li>
+<li class="project card" data-status="terminado">
+<div class="project-head">
+<h3>BuggyBank: verificar el resultado real</h3>
+<span class="status">Terminado</span>
+</div>
+<p>Pruebas de transferencias en un banco de práctica con fallos sembrados. Cada prueba comprueba el débito, el crédito y el movimiento registrado, no solo el mensaje de éxito. Hallazgo propio: las transferencias de importe entero de 500 o más se aplican dos veces; lo acoté con valores límite (499 no, 500 sí).</p><p class="link"><a href="https://github.com/BasiMontes/buggybank-playwright" rel="noopener" target="_blank">Ver el repositorio</a></p>
 <ul class="tags"><li>Playwright</li><li>TypeScript</li></ul>
+</li><li>TypeScript</li></ul>
 </li>
 </ol>
-<p class="next">Siguientes retos: contrato de API, laboratorio de flaky tests, rendimiento, accesibilidad y seguridad, y evaluación de lo que genera una IA.</p>
+<p class="next">Siguientes retos: laboratorio de flaky tests, rendimiento, accesibilidad y seguridad, y evaluación de lo que genera una IA.</p>
 </section>
 <section aria-labelledby="aptitudes-titulo" class="skills" id="aptitudes">
 <div class="section-head">
