@@ -199,6 +199,8 @@ main > section { max-width: var(--wide); margin: 0 auto; padding: clamp(3.5rem, 
 .project h3 { font-size: 1.2rem; font-weight: 900; }
 .status { font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
 .project[data-status="en-curso"] .status { color: var(--moss); }
+/* Los proyectos terminados no muestran etiqueta; el texto queda en el HTML para que cada proyecto tenga estado. */
+.project[data-status="terminado"] .status { display: none; }
 .project[data-status="en-curso"] .status::before {
   content: ""; display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 50%;
   background: var(--moss); margin-right: 0.45rem; vertical-align: 0.05em;

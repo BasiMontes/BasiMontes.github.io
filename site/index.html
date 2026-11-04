@@ -161,10 +161,10 @@
 <p>Retos que resuelvo uno detrás de otro. Cada uno se publica con su repositorio, un README que explica las decisiones y un post contando lo aprendido.</p>
 </div>
 <ol class="project-list">
-<li class="project card" data-status="en-curso">
+<li class="project card" data-status="terminado">
 <div class="project-head">
 <h3>Rendimiento con k6</h3>
-<span class="status">En curso</span>
+<span class="status">Terminado</span>
 </div>
 <p>Pruebas de carga de una API de reservas de pistas con k6, en un MacBook Air. Medí hasta 400 usuarios virtuales: los umbrales de latencia y error se cumplen en las tres repeticiones y no encontré punto de rotura. Cada cifra va con su condición y el comando que la produjo, y las limitaciones están escritas.</p>
 <p class="link"><a href="https://github.com/BasiMontes/k6-performance-lab" rel="noopener" target="_blank">Ver el repositorio</a> · <a href="https://basimontes.github.io/k6-performance-lab/" rel="noopener" target="_blank">Ver la web</a></p>
@@ -173,6 +173,7 @@
 <li class="project card" data-status="terminado">
 <div class="project-head">
 <h3>Laboratorio de flaky tests</h3>
+<span class="status">Terminado</span>
 </div>
 <p>Catálogo de 15 causas de inestabilidad en pruebas de Playwright, cada una reproducida y medida con 100 repeticiones, y un caso real contra Toolshop, una aplicación de práctica en local. Las pruebas bien escritas no fallaron en 3.300 ejecuciones bajo presión (más workers, CPU lenta, API con retraso); las mismas con patrones malos fallan, o aprueban sin comprobar nada, según la presión. Incluye un detector que repite una suite y clasifica cada prueba con su intervalo de confianza. Todas las cifras son una sola medición, y un fallo del pedido completo sigue sin explicar.</p>
 <p class="link"><a href="https://github.com/BasiMontes/flaky-test-lab" rel="noopener" target="_blank">Ver el repositorio</a> · <a href="https://basimontes.github.io/flaky-test-lab/" rel="noopener" target="_blank">Ver la web</a></p>
@@ -180,6 +181,7 @@
 <li class="project card" data-status="terminado">
 <div class="project-head">
 <h3>Contrato de API: que el servidor cumpla lo que promete</h3>
+<span class="status">Terminado</span>
 </div>
 <p>API de práctica de reservas de pistas deportivas, con su especificación OpenAPI como fuente de verdad. Las pruebas validan cada respuesta contra el contrato y comprueban las reglas de negocio: horario, solapes, límites por usuario y cancelación. Varias reglas clave se han comprobado rompiéndolas a propósito para verificar que sus pruebas fallan.</p>
 <p class="link"><a href="https://github.com/BasiMontes/api-contract-tests" rel="noopener" target="_blank">Ver el repositorio</a> · <a href="https://basimontes.github.io/api-contract-tests/" rel="noopener" target="_blank">Ver la web</a></p>
@@ -189,6 +191,7 @@
 <li class="project card" data-status="terminado">
 <div class="project-head">
 <h3>BuggyBank: verificar el resultado real</h3>
+<span class="status">Terminado</span>
 </div>
 <p>Pruebas de transferencias en un banco de práctica con fallos sembrados. Cada prueba comprueba el débito, el crédito y el movimiento registrado, no solo el mensaje de éxito. Hallazgo propio: las transferencias de importe entero de 500 o más se aplican dos veces; lo acoté con valores límite (499 no, 500 sí).</p>
 <p class="link"><a href="https://github.com/BasiMontes/buggybank-playwright" rel="noopener" target="_blank">Ver el repositorio</a> · <a href="https://buggybank-seven.vercel.app/" rel="noopener" target="_blank">Ver la web</a></p>
