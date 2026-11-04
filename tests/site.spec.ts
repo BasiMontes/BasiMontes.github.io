@@ -53,8 +53,12 @@ test('cada proyecto tiene un estado reconocible', async ({ page }) => {
   expect(await projects.count()).toBeGreaterThan(0);
   const allowed = ['en-curso', 'terminado'];
   for (const project of await projects.all()) {
-    expect(allowed).toContain(await project.getAttribute('data-status'));
-    await expect(project.locator('.status')).not.toBeEmpty();
+    const estado = await project.getAttribute('data-status');
+    expect(allowed).toContain(estado);
+    // Solo los proyectos en curso llevan etiqueta; los terminados no.
+    if (estado === 'en-curso') {
+      await expect(project.locator('.status')).not.toBeEmpty();
+    }
   }
   // Solo puede haber un proyecto en curso: es la regla del portfolio.
   await expect(page.locator('.project[data-status="en-curso"]')).toHaveCount(1);
